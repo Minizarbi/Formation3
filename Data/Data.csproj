@@ -74,6 +74,14 @@
     <Compile Include="Migrations\201603110817207_Ajout les quantités.Designer.cs">
       <DependentUpon>201603110817207_Ajout les quantités.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603180812053_test.cs" />
+    <Compile Include="Migrations\201603180812053_test.Designer.cs">
+      <DependentUpon>201603180812053_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603180817100_test2.cs" />
+    <Compile Include="Migrations\201603180817100_test2.Designer.cs">
+      <DependentUpon>201603180817100_test2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603110817207_Ajout les quantités.resx">
       <DependentUpon>201603110817207_Ajout les quantités.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603180812053_test.resx">
+      <DependentUpon>201603180812053_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603180817100_test2.resx">
+      <DependentUpon>201603180817100_test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

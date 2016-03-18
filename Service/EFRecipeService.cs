@@ -13,13 +13,24 @@ namespace Service
 {
     public class EFRecipeService: AbstractRecipeService
     {
-        public override List<Recipe> GetRecipes()
+        public override List<Recipe> GetRecipes() 
         {
             using (var dbContext = new Data.Model())
             {
                 return dbContext
                             .Recipes
                             .Select(r => new Recipe {Id = r.Id, Title = r.Name}).ToList();
+            }
+        }
+
+        public List<Recipe> GetRecipes(string filtre)
+        {
+            using (var dbContext = new Data.Model())
+            {
+                return dbContext
+                            .Recipes
+                            .Where(r => r.Name.Contains(filtre))
+                            .Select(r => new Recipe { Id = r.Id, Title = r.Name }).ToList();
             }
         }
     }
